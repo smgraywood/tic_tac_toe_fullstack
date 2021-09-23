@@ -1,11 +1,11 @@
 import express from "express";
 import mime from "mime-types";
 
-import contactsRouter from "./contactsRouter.mjs";
+import gameRouter from "./gameRouter.mjs";
 
 const app = express();
 
-app.use("/api/contacts", contactsRouter);
+app.use("/api/players", gameRouter);
 
 app.get("/api/ping", (request, response) =>
   response.json({ response: "pong" }),

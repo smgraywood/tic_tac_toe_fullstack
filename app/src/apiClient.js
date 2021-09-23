@@ -1,11 +1,13 @@
-export const getContacts = () => _get("/api/contacts");
+export const getPlayers = async () => {
+  const response = await fetch("/api/users");
+  return response.json();
+};
 
-export const addContact = (contact) => _post("/api/contacts", contact);
+export const addPlayer = (player) => _post("/api/players", player);
 
-export const updateContact = (contact, id) =>
-  _put(`/api/contacts/${id}`, contact);
+export const updatePlayer = (player, id) => _put(`/api/players/${id}`, player);
 
-const _get = async (url) => (await fetch(url)).json();
+// const _get = async (url) => (await fetch(url)).json();
 
 const _put = async (url, body) => {
   const res = await fetch(url, {

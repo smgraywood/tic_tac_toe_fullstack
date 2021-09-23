@@ -3,23 +3,18 @@ CREATE TABLE tictactoe (ID int generated always as identity, Plasyer_Name text, 
 ALTER TABLE tictactoe 
 RENAME COLUMN Plasyer_Name TO Player_Name;
 
-INSERT INTO contacts(Name, Email, Phone, Notes)
+INSERT INTO tictactoe (Player_Name, X_or_O, Number_of_Wins)
 VALUES
-('Elizabeth Hadik-Barkoczy', 'elizabeth@gmail.com', '415-880-1234', 'Elizabeth is an awesome computer scientist!'),
-('Jen Huynh', 'jen@gmail.com', '510-331-1234', 'Jen is a kickass dev!'),
-('Malika Kassen-Lao', 'malika@gmail.com', '408-123-1234', 'Malika is a Python genius!'),
-('Natalie Bencomo', 'natalie@gmail.com', '408-123-1234', 'Natalie is a Javascript legend!'),
-('Serena Chen', 'serena@gmail.com', '831-123-1234', 'Serena is a badass developer!'),
-('Shaylan Hawthorne', 'shay@gmail.com', '715-123-1234', 'Shay is a CSS legend!'),
-('Supriya Venkatachala', 'supriya@gmail.com', '710-123-1234', 'Supriya is a backend baller!'),
-('Tabby OMelay', 'tabbykatz@gmail.com', '510-926-8161', 'Tabby is a kickass engineer!'),
-('Tara Larsen', 'tara@gmail.com', '510-123-1234', 'Tara is a killer computer scientist!'),
-('Xiao Zhong', 'xiao@gmail.com', '801-123-1234', 'Xiao is backend badass!'),
-('Zelma Sedano', 'zelma@gmail.com', '773-123-1234', 'Zelma is a frontend queen!');
+('Jen Huynh', 'X', '6'),
+('Natalie Bencomo', 'O', '5'),
+('Zelma Sedano', 'X', '12'),
+('Sarah Graywood', 'O', '8');
+
+DELETE FROM tictactoe
+WHERE ID=5;
 
 INSERT INTO contacts(Name, Email, Phone, Notes)
 VALUES
-('Sarah Graywood', 'sarah@gmail.com', '831-123-1234', 'Sarah is a CSS master!');
 
 ALTER TABLE Contacts
 ADD image_url text;

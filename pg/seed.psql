@@ -148,6 +148,10 @@ COPY public.tasks (id, name) FROM stdin;
 --
 
 COPY public.tictactoe (id, player_name, x_or_o, number_of_wins) FROM stdin;
+1	Jen Huynh	X	6
+2	Natalie Bencomo	O	5
+3	Zelma Sedano	X	12
+7	Sarah Graywood	O	8
 \.
 
 
@@ -169,7 +173,7 @@ SELECT pg_catalog.setval('public.tasks_id_seq', 5, true);
 -- Name: tictactoe_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.tictactoe_id_seq', 1, false);
+SELECT pg_catalog.setval('public.tictactoe_id_seq', 7, true);
 
 
 --
