@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
+import * as apiClient from "../apiClient";
 import { calculateWinner } from "../helper";
 
 import { Board } from "./Board.js";
-import { Leaderboard } from "./Leaderboard";
 
 const Game = () => {
   const [players, setPlayers] = React.useState([]);
+  const loadPlayers = async () => {
+    setPlayers(await apiClient.getPlayers());
+  };
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [stepNumber, setStepNumber] = useState(0);
+
   const [xIsNext, setXisNext] = useState(true);
   const winner = calculateWinner(history[stepNumber]);
   const xO = xIsNext ? "X" : "O";
+
+  useEffect(() => {
+    loadPlayers();
+  });
 
   const handleClick = (i) => {
     const historyPoint = history.slice(0, stepNumber + 1);
