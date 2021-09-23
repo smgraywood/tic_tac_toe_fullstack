@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+body{
+    background-image: url("https://www.pinclipart.com/picdir/big/535-5357755_san-francisco-skyline-png-silhouette-san-francisco-skyline.png");
+    background-color: #E6E6E6;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+h6{
+    text-align: center;
+    font-family:'Josefin Slab', serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+img{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+ul{
+    display: block;
+    background-color: #CDD2D5;
+    border: #000000;
+    opacity: .9;
+    text-align: center;
+    border-radius: 75px;
+    padding: 20px;
+    border-style: double;
+    border: 2px, #ffffff;
+    height:200px;
+    width: 250px;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+li{
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Josefin Slab', serif;
+}
+button{
+    display:inline-block; 
+    align-items: center;
+    margin: auto 0;
+     justify-content: center;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Josefin Slab', serif;
+    height: 50px;
+}

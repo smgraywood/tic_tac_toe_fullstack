@@ -1,0 +1,74 @@
+CREATE TABLE tictactoe (ID int generated always as identity, Plasyer_Name text, X_or_O text, Number_of_Wins text);
+
+ALTER TABLE tictactoe 
+RENAME COLUMN Plasyer_Name TO Player_Name;
+
+INSERT INTO contacts(Name, Email, Phone, Notes)
+VALUES
+('Elizabeth Hadik-Barkoczy', 'elizabeth@gmail.com', '415-880-1234', 'Elizabeth is an awesome computer scientist!'),
+('Jen Huynh', 'jen@gmail.com', '510-331-1234', 'Jen is a kickass dev!'),
+('Malika Kassen-Lao', 'malika@gmail.com', '408-123-1234', 'Malika is a Python genius!'),
+('Natalie Bencomo', 'natalie@gmail.com', '408-123-1234', 'Natalie is a Javascript legend!'),
+('Serena Chen', 'serena@gmail.com', '831-123-1234', 'Serena is a badass developer!'),
+('Shaylan Hawthorne', 'shay@gmail.com', '715-123-1234', 'Shay is a CSS legend!'),
+('Supriya Venkatachala', 'supriya@gmail.com', '710-123-1234', 'Supriya is a backend baller!'),
+('Tabby OMelay', 'tabbykatz@gmail.com', '510-926-8161', 'Tabby is a kickass engineer!'),
+('Tara Larsen', 'tara@gmail.com', '510-123-1234', 'Tara is a killer computer scientist!'),
+('Xiao Zhong', 'xiao@gmail.com', '801-123-1234', 'Xiao is backend badass!'),
+('Zelma Sedano', 'zelma@gmail.com', '773-123-1234', 'Zelma is a frontend queen!');
+
+INSERT INTO contacts(Name, Email, Phone, Notes)
+VALUES
+('Sarah Graywood', 'sarah@gmail.com', '831-123-1234', 'Sarah is a CSS master!');
+
+ALTER TABLE Contacts
+ADD image_url text;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*4nX8TmILPEJmGILBP7MMEA.jpeg' 
+WHERE contact_id= 1;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/888/1*Zo8LrzhmshsU0breLTEn_w.jpeg' 
+WHERE contact_id= 2;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/766/1*JCaLQO-pGkk3XgsJc6ecfw.jpeg' 
+WHERE contact_id= 3;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*flGtTUndV0fjYxQORaZHOw.jpeg' 
+WHERE contact_id= 4;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/500/1*W9db-RM1HrL0Gxft5UlWog.jpeg' 
+WHERE contact_id= 5;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/904/1*KYs1HNAzsIgTUTtnPOBhLg.jpeg' 
+WHERE contact_id= 6;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/800/1*Ybo6P1Yep-vyWIObfABEdg.jpeg' 
+WHERE contact_id= 7;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1400/1*0qigN_I6DSUX5WpAEDZDHg.png' 
+WHERE contact_id= 8;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/696/1*JrVohFj1RVN750wOdFfkMQ.jpeg' 
+WHERE contact_id= 9;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/660/1*CsVsesZdn_ZM0IGlw1vAyg.jpeg' 
+WHERE contact_id= 10;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*xQ8Ba3ioXfLQ_fcW_d8T-w.png' 
+WHERE contact_id= 11;
+
+UPDATE contacts 
+SET image_url='https://miro.medium.com/max/1000/1*B-TqqcFf426p4U0EIgIL8w.png' 
+WHERE contact_id= 12;
+
