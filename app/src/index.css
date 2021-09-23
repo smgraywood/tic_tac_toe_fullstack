@@ -11,7 +11,7 @@
 body {
   background-image: url("https://content.haycdn.com/mgen/master:BREW4997.jpg");
   background-size: cover;
-  color: rgb(228, 178, 41);
+  color: #BAA480;
   font-family: 'Limelight', cursive;
   display: flex;
   justify-content: center;
@@ -47,19 +47,36 @@ h3{
   padding: 15px;
   opacity: .9;
 }
+h2{
+  display:flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: .5 px solid gray;
+  border-radius: 20px;
+  box-shadow: 1px 5px lightgray;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  opacity: .9;
+  width: 150px;
+}
+
 h6{
   margin-left: 25px;
 }
 
 .board {
-  border: 1rem solid #ffbd2f;
-  background: #ffbd2f;
-  width: 500px;
+  border: 1rem solid  #BAA480;
+background-color: #ffffff;
+;  width: 500px;
   height: 500px;
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(3, 2fr) / repeat(3, 2fr);
   gap: 1rem;
   margin:0 auto;
+  opacity: .9;
 }
 
 .squares {
@@ -70,7 +87,7 @@ h6{
   /* font-weight: 800; */
   cursor: pointer;
   outline: none;
-  
+  height:125px;
 }
 
 .X {
@@ -101,4 +118,11 @@ li {
   cursor: pointer;
   padding: 0.5rem;
   margin: 0.5rem 1rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+background-color: #ffffff;
+opacity: .9;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-rhDI0RRYOuUtNpQUXaT-4k8gSZQAbJc6_a_yBYI07Oz97_f_UwCrl2vQwPaKZtGG5s&usqp=CAU");
 }
